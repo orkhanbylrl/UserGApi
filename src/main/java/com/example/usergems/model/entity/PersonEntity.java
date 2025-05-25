@@ -25,7 +25,7 @@ public class PersonEntity {
     String linkedinUrl;
     Integer totalMeetingCount;
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
-    Set<MeetingDetailEntity> meetingDetails = new HashSet<>();
+    Set<MeetingDetailsEntity> meetingDetails = new HashSet<>();
     LocalDateTime lastFetchedAt;
     @ManyToMany(mappedBy = "accepted")
     private Set<EventEntity> acceptedEvents = new HashSet<>();
