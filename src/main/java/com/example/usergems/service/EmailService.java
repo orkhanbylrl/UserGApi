@@ -21,7 +21,7 @@ public class EmailService {
     }
 
     public void sendEmail() {
-        List<UserEntity> all = userService.getAll();
+
 
     }
 }
